@@ -6,6 +6,7 @@
   <title>Portfólio de Automações</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <!-- Modal de Imagem Ampliada -->
 <div id="imagemModal" class="modal-imagem">
@@ -21,12 +22,13 @@
       <p class="tagline">Desenvolvedor • Automação • Dados</p>
     </div>
 
+
     <nav class="nav-menu">
       <ul>
         <li><a href="#sobre-mim">Sobre mim</a></li>
         <li><a href="#portfolio">Projetos</a></li>
         <li><a href="https://github.com/Diego-deBrito" target="_blank">GitHub</a></li>
-        <li><a href="mailto:contato@seuemail.com">Contato</a></li>
+        <li><a href="debrito521@gmail.com">Contato</a></li>
       </ul>
     </nav>
   </div>
@@ -48,82 +50,89 @@
       "Aprender algo novo é desbloquear uma nova versão de si mesmo."
     </blockquote>
 
-    <div class="tech-stack">
-      <h3>Tech Stack e Ferramentas</h3>
-      <p>Python · Java · JavaScript · Node.js · MySQL · HTML · CSS · Power BI</p>
+    
+      <div class="container">
+    <h2>Minhas Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <i class="fab fa-python"></i>
+        <p>Python</p>
+        <div class="progress-bar" style="width: 90%;"></div>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-java"></i>
+        <p>Java</p>
+        <div class="progress-bar" style="width: 80%;"></div>
+      </div>
+      <!-- Adicione mais habilidades -->
     </div>
   </div>
+
 </section>
 
 
-  <!-- SEÇÃO PORTFÓLIO COM CARROSSEL -->
-  <section id="portfolio">
-    <h2>Meus Projetos</h2>
+
+  <!-- SEÇÃO DE PROJETOS -->
+<section id="portfolio" class="portfolio-section">
+  <div class="container">
+    <h2>Projetos em Destaque</h2>
+    <p class="portfolio-subtitle">
+      Abaixo estão alguns dos projetos que desenvolvi com foco em automação, análise de dados e integração com sistemas web.
+    </p>
+
     <div class="carousel-container">
-  <button class="carousel-btn left">&#10094;</button>
-  <div class="carousel-track">
-        
-       <!-- Projeto 1 - Monitor de Movimentações Financeiras -->
-<div class="carousel-item">
-  <img src="assets/AnimaçãoFinanceira.gif" alt="Monitor Abas Projeto" class="zoomable" onclick="abrirModalImagem(this)">
-  <h3>Monitor de Movimentações Financeiras – Acompanhamento Automatizado</h3>
-  <p class="carousel-description">
-    📊 Faz leitura e validação automatizada de dados em diversas abas de um sistema governamental.<br>
-    ✅ Usa checkpoints, navegação dinâmica, salvamento incremental e validação de dados.<br>
-    🧰 Python · Selenium · Excel · JSON · Automação de Navegador<br>
-    <a href="https://github.com/Diego-deBrito/movimentacoes_financeiras_trsgov.git" target="_blank">🔗 Ver Código no GitHub</a>
-  </p>
-</div>
+      <button class="carousel-btn left">&#10094;</button>
+      <div class="carousel-track">
 
-<!-- Projeto 2 - Monitor de Abas -->
-<div class="carousel-item">
-  <img src="assets/Animação.gif" alt="Monitor Abas Projeto" class="zoomable" onclick="abrirModalImagem(this)">
-  <h3>Monitor de Abas – Acompanhamento Automatizado</h3>
-  <p class="carousel-description">
-    📊 Faz leitura e validação automatizada de dados em diversas abas de um sistema governamental.<br>
-    ✅ Usa checkpoints, navegação dinâmica, salvamento incremental e validação de dados.<br>
-    🧰 Python · Selenium · Excel · JSON · Automação de Navegador<br>
-    <a href="https://github.com/Diego-deBrito/Script_Datas" target="_blank">🔗 Ver Código no GitHub</a>
-  </p>
-</div>
+        <!-- Projeto 1 - Movimentações Financeiras -->
+        <div class="carousel-item">
+          <img src="assets/AnimaçãoFinanceira.gif" alt="Monitor de Movimentações" class="zoomable" onclick="abrirModalImagem(this)">
+          <h3>Monitor de Movimentações Financeiras</h3>
+          <p class="carousel-description">
+            Realiza o acompanhamento automatizado de dados em abas financeiras de um sistema governamental, com navegação dinâmica e geração de relatórios.<br>
+            <strong>Tecnologias utilizadas:</strong> Python · Selenium · Excel · JSON<br>
+            <a href="https://github.com/Diego-deBrito/movimentacoes_financeiras_trsgov.git" target="_blank">🔗 Ver Código no GitHub</a>
+          </p>
+        </div>
 
+        <!-- Projeto 2 - Monitor de Abas -->
+        <div class="carousel-item">
+          <img src="assets/Animação.gif" alt="Monitor de Abas" class="zoomable" onclick="abrirModalImagem(this)">
+          <h3>Monitor de Abas – Acompanhamento Automatizado</h3>
+          <p class="carousel-description">
+            Navega e extrai dados de diversas abas como "TA", "Esclarecimentos" e "Anexos" em plataformas públicas com robustez e controle por sessão.<br>
+            <strong>Tecnologias utilizadas:</strong> Python · Selenium · Pandas · Web Scraping<br>
+            <a href="https://github.com/Diego-deBrito/Script_Datas" target="_blank">🔗 Ver Código no GitHub</a>
+          </p>
+        </div>
 
+        <!-- Projeto 3 - Envio de E-mails -->
+        <div class="carousel-item">
+          <img src="assets/AnimaçãoEnvioEmail.gif" alt="Envio de Email Automático" class="zoomable" onclick="abrirModalImagem(this)">
+          <h3>Envio Automático de E-mails para Técnicos</h3>
+          <p class="carousel-description">
+            Automatiza a leitura de dados em Excel e o envio de mensagens personalizadas via e-mail com filtros por técnicos e tipos de instrumento.<br>
+            <strong>Tecnologias utilizadas:</strong> Python · Pandas · SMTP · Automação de Tarefas<br>
+            <a href="https://github.com/Diego-deBrito/envio_emails.git" target="_blank">🔗 Ver Código no GitHub</a>
+          </p>
+        </div>
 
-
-<!-- Projeto 2 - Monitor de Abas -->
-<div class="carousel-item">
-  <img src="assets/Animação.gif" alt="Monitor Abas Projeto" class="zoomable" onclick="abrirModalImagem(this)">
-  <h3>Monitor de Abas – Acompanhamento Automatizado</h3>
-  <p class="carousel-description">
-    📊 Faz leitura e validação automatizada de dados em diversas abas de um sistema governamental.<br>
-    ✅ Usa checkpoints, navegação dinâmica, salvamento incremental e validação de dados.<br>
-    🧰 Python · Selenium · Excel · JSON · Automação de Navegador<br>
-    <a href="https://github.com/Diego-deBrito/Script_Datas" target="_blank">🔗 Ver Código no GitHub</a>
-  </p>
-</div>
-
-
-
-
-
-<!-- Projeto 2 - Monitor de Abas -->
-<div class="carousel-item">
-  <img src="assets/Animação.gif" alt="Monitor Abas Projeto" class="zoomable" onclick="abrirModalImagem(this)">
-  <h3>Monitor de Abas – Acompanhamento Automatizado</h3>
-  <p class="carousel-description">
-    📊 Faz leitura e validação automatizada de dados em diversas abas de um sistema governamental.<br>
-    ✅ Usa checkpoints, navegação dinâmica, salvamento incremental e validação de dados.<br>
-    🧰 Python · Selenium · Excel · JSON · Automação de Navegador<br>
-    <a href="https://github.com/Diego-deBrito/Script_Datas" target="_blank">🔗 Ver Código no GitHub</a>
-  </p>
-</div>
-
-
+        <!-- Projeto 4 - Coleta de Anexos -->
+        <div class="carousel-item">
+          <img src="assets/AnimaçãoContratos.gif" alt="Automação de Contratos" class="zoomable" onclick="abrirModalImagem(this)">
+          <h3>Coleta Automatizada de Anexos em Contratos</h3>
+          <p class="carousel-description">
+            Percorre instrumentos no sistema Transferegov, acessa a aba "Contratos" e realiza o download de todos os arquivos anexos com organização por pasta.<br>
+            <strong>Tecnologias utilizadas:</strong> Python · Selenium · Web Scraping · Pandas<br>
+            <a href="https://github.com/Diego-deBrito/Download_Docs.git" target="_blank">🔗 Ver Código no GitHub</a>
+          </p>
+        </div>
 
       </div>
-    <button class="carousel-btn right">&#10095;</button>
+      <button class="carousel-btn right">&#10095;</button>
     </div>
-  </section>
+  </div>
+</section>
 
   <footer>
     <p>&copy; 2025 - Desenvolvido por Diego Brito</p>

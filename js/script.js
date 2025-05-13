@@ -32,3 +32,6 @@ function abrirModalImagem(elemento) {
 function fecharModalImagem() {
   document.getElementById('imagemModal').style.display = 'none';
 }
+
+
+
